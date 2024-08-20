@@ -1,0 +1,30 @@
+using System;
+
+namespace Armstrong
+{
+internal class Program
+{
+static void Main(string[] args)
+{
+int rem,sum=0,num,x;
+Console.WriteLine("Enter a number :");
+num=Convert.ToInt32(Console.ReadLine());
+string y=Convert.ToString(num);
+x=num;
+while(num>0)
+{
+rem=num%10;
+sum=sum+((int)Math.Pow(rem,y.Length));
+num=num/10;
+}
+if(sum==x)
+{
+Console.WriteLine("It is Armstrong number");
+}
+else
+{
+Console.WriteLine("It is not an Armstrong number");
+}
+}
+}
+}
